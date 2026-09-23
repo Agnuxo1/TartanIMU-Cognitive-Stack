@@ -1,0 +1,15 @@
+{
+  "action": {
+    "type": "choice",
+    "instructions": "Choose the best next action",
+    "criteria": {
+      "inspect": "Inspect the relevant evidence first",
+      "implement": "Implement a bounded change",
+      "review": "Review the existing result"
+    }
+  },
+  "confidence": {
+    "type": "noul",
+    "instructions": "How confident is the selected action?"
+  }
+}

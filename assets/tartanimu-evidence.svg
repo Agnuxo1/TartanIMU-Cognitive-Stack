@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 560" role="img" aria-labelledby="title desc">
+  <title id="title">TartanIMU task contract and evidence status</title>
+  <desc id="desc">Each one-second window contains 200 samples of six raw IMU channels and maps to body-frame velocity vx, vy, vz from one platform-agnostic model. The benchmark combines normalized AVE and ATE20. This workspace currently contains synthetic contract utilities only, not a trained model, competition prediction, or official score.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#081722"/><stop offset="1" stop-color="#133646"/></linearGradient>
+    <linearGradient id="blue3" x1="0" x2="1"><stop stop-color="#55c8f2"/><stop offset="1" stop-color="#60e3c4"/></linearGradient>
+    <marker id="arr3" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#72d9d1"/></marker>
+  </defs>
+  <rect width="1480" height="560" rx="30" fill="url(#bg3)"/>
+  <text x="56" y="59" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="27" font-weight="700">TARTANIMU · TASK CONTRACT ≠ COMPETITION RESULT</text>
+  <text x="56" y="91" fill="#a9c5d1" font-family="Inter,Segoe UI,sans-serif" font-size="15">One platform-blind model: raw inertial signal in, body-frame velocity out.</text>
+  <rect x="62" y="145" width="360" height="177" rx="20" fill="#153242" stroke="#3a7786"/>
+  <text x="94" y="184" fill="#5fe0d2" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700" letter-spacing="1">INPUT · 1 SECOND</text>
+  <text x="94" y="222" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="700">200 × 6 IMU samples</text>
+  <text x="94" y="256" fill="#c2d5df" font-family="Inter,Segoe UI,sans-serif" font-size="14">3-axis acceleration · 3-axis gyro</text>
+  <text x="94" y="282" fill="#8faeba" font-family="Inter,Segoe UI,sans-serif" font-size="13">200 Hz · SI units · body frame</text>
+  <rect x="560" y="145" width="360" height="177" rx="20" fill="#202b48" stroke="#737fc8"/>
+  <text x="592" y="184" fill="#b4bdff" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700" letter-spacing="1">INFERENCE · NO PLATFORM ID</text>
+  <text x="592" y="222" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="700">One unified model</text>
+  <text x="592" y="256" fill="#c2d5df" font-family="Inter,Segoe UI,sans-serif" font-size="14">Car · quadruped · drone · human</text>
+  <text x="592" y="282" fill="#9ca9d8" font-family="Inter,Segoe UI,sans-serif" font-size="13">The test platform is hidden</text>
+  <rect x="1058" y="145" width="360" height="177" rx="20" fill="#153a3b" stroke="#3caa98"/>
+  <text x="1090" y="184" fill="#69e8c9" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700" letter-spacing="1">OUTPUT · EACH WINDOW</text>
+  <text x="1090" y="231" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="27" font-weight="700">v<tspan baseline-shift="sub" font-size="16">x</tspan> · v<tspan baseline-shift="sub" font-size="16">y</tspan> · v<tspan baseline-shift="sub" font-size="16">z</tspan></text>
+  <text x="1090" y="270" fill="#c2d5df" font-family="Inter,Segoe UI,sans-serif" font-size="14">Body-frame linear velocity (m/s)</text>
+  <g fill="none" stroke="#72d9d1" stroke-width="3" marker-end="url(#arr3)"><path d="M422 232h128"/><path d="M920 232h128"/></g>
+  <rect x="62" y="366" width="628" height="128" rx="18" fill="#12283a" stroke="#45677b"/>
+  <text x="94" y="407" fill="#75d8f3" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700">OFFICIAL SCORE · LOWER IS BETTER</text>
+  <text x="94" y="442" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="17">0.6 × AVE / 0.7356384388 + 0.4 × ATE20 / 3.1160277267</text>
+  <text x="94" y="470" fill="#afc6d2" font-family="Inter,Segoe UI,sans-serif" font-size="13">Macro-average across four platforms; report values must come from the organizer's service.</text>
+  <rect x="734" y="366" width="684" height="128" rx="18" fill="#3a292b" stroke="#c58071"/>
+  <text x="766" y="407" fill="#ffbc9f" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700">THIS REPOSITORY · EVIDENCE STATUS</text>
+  <text x="766" y="442" fill="#f5e5df" font-family="Inter,Segoe UI,sans-serif" font-size="15">Synthetic contract tests only. No trained model, prediction CSV, weights, or official score here.</text>
+  <text x="766" y="470" fill="#ddbeb4" font-family="Inter,Segoe UI,sans-serif" font-size="13">A timely private Kaggle entry remains unverified; no rank or result is claimed.</text>
+  <text x="56" y="533" fill="#7896a7" font-family="Inter,Segoe UI,sans-serif" font-size="12">Contract checks are not a reproduction of the organizer's scoring service or a leaderboard evaluation.</text>
+</svg>

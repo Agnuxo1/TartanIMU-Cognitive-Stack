@@ -1,0 +1,20 @@
+{
+  "project_name": "REPLACE_WITH_PROJECT_NAME",
+  "organization": "REPLACE_WITH_ORGANIZATION",
+  "legal_entity": "REPLACE_WITH_LEGAL_ENTITY",
+  "contact_email": "REPLACE_WITH_CONTACT_EMAIL",
+  "website": "",
+  "github_repositories": [
+    "https://github.com/REPLACE_WITH_REPOSITORY"
+  ],
+  "arxiv_papers": [
+    "https://arxiv.org/abs/REPLACE_WITH_ID"
+  ],
+  "capabilities": [
+    "artificial intelligence"
+  ],
+  "team": [],
+  "prior_projects": [],
+  "default_budget_eur": null,
+  "extra_facts": {}
+}

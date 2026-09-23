@@ -1,0 +1,9 @@
+typesafe-sdk==0.7.0
+openai==3.16.2
+openai-agents==0.22.3
+tiktoken==0.14.0
+pydantic>=2.13
+python-dotenv>=1.2
+rich>=15
+httpx>=0.28
+pytest>=9

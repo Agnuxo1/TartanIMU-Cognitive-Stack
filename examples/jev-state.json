@@ -1,0 +1,7 @@
+{
+  "task": "Classify the next bounded action for an agent",
+  "constraints": [
+    "Prefer a deterministic action when evidence is sufficient",
+    "Return one concise decision"
+  ]
+}

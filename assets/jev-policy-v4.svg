@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 560" role="img" aria-labelledby="title desc">
+  <title id="title">JEV checkpoint and thinktank policy</title>
+  <desc id="desc">A deterministic reflex filter skips routine checkpoints and invokes JEV only on meaningful uncertainty or state changes. A bounded two-view Luna panel with a Sol critic is conditional. Code applies hard budgets and a human gate for external actions.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10152b"/><stop offset="1" stop-color="#182942"/></linearGradient>
+    <linearGradient id="mint" x1="0" x2="1"><stop stop-color="#4be0bf"/><stop offset="1" stop-color="#4ba9ff"/></linearGradient>
+    <marker id="arr2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#78dccc"/></marker>
+  </defs>
+  <rect width="1480" height="560" rx="30" fill="url(#bg2)"/>
+  <text x="56" y="59" fill="#f4fbff" font-family="Inter,Segoe UI,sans-serif" font-size="27" font-weight="700">WHEN SHOULD JEV THINK?</text>
+  <text x="56" y="91" fill="#a9bfd2" font-family="Inter,Segoe UI,sans-serif" font-size="15">A small deterministic filter protects latency; semantic questions are event-driven and budgeted.</text>
+  <g font-family="Inter,Segoe UI,sans-serif">
+    <rect x="54" y="145" width="250" height="158" rx="18" fill="#172f40" stroke="#3d7885"/>
+    <text x="82" y="181" fill="#57dec8" font-size="12" font-weight="700" letter-spacing="1">SIGNAL</text>
+    <text x="82" y="216" fill="#f4fbff" font-size="20" font-weight="700">Observe state</text>
+    <text x="82" y="247" fill="#bfd0de" font-size="14"><tspan x="82">Routine result, no change,</tspan><tspan x="82" dy="20">low uncertainty?</tspan></text>
+    <rect x="358" y="145" width="290" height="158" rx="18" fill="#202c45" stroke="#797fe0"/>
+    <text x="388" y="181" fill="#a9a9ff" font-size="12" font-weight="700" letter-spacing="1">DETERMINISTIC REFLEX</text>
+    <text x="388" y="216" fill="#f4fbff" font-size="20" font-weight="700">Value-of-information</text>
+    <text x="388" y="247" fill="#bfd0de" font-size="14"><tspan x="388">Failure · phase change · ambiguity</tspan><tspan x="388" dy="20">risk · conflicting evidence · budget</tspan></text>
+    <rect x="705" y="145" width="280" height="158" rx="18" fill="#153a45" stroke="#34a7a8"/>
+    <text x="735" y="181" fill="#57dec8" font-size="12" font-weight="700" letter-spacing="1">SEMANTIC CHECKPOINT</text>
+    <text x="735" y="216" fill="#f4fbff" font-size="20" font-weight="700">JEV typed judgment</text>
+    <text x="735" y="247" fill="#bfd0de" font-size="14"><tspan x="735">Route / supervise / gate</tspan><tspan x="735" dy="20">compact evidence; no authority</tspan></text>
+    <rect x="1042" y="145" width="380" height="158" rx="18" fill="#322746" stroke="#af83dc"/>
+    <text x="1072" y="181" fill="#d7b1ff" font-size="12" font-weight="700" letter-spacing="1">OPTIONAL THINKTANK</text>
+    <text x="1072" y="216" fill="#f4fbff" font-size="20" font-weight="700">Only if extra views help</text>
+    <text x="1072" y="247" fill="#d4c8df" font-size="14"><tspan x="1072">Two independent Luna views</tspan><tspan x="1072" dy="20">then Sol critique; hard call cap</tspan></text>
+  </g>
+  <g fill="none" stroke="#78dccc" stroke-width="3" marker-end="url(#arr2)"><path d="M304 224h48"/><path d="M648 224h49"/><path d="M985 224h49"/></g>
+  <path d="M482 303v73H176v-68" fill="none" stroke="#67d6ba" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#arr2)"/>
+  <rect x="72" y="394" width="400" height="101" rx="16" fill="#123933" stroke="#2e9e82"/>
+  <text x="100" y="430" fill="#7aebc6" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700">FAST PATH · NO EXTRA MODEL CALL</text>
+  <text x="100" y="460" fill="#c6ddd6" font-family="Inter,Segoe UI,sans-serif" font-size="14">Continue locally when the state is routine and the budget permits.</text>
+  <rect x="517" y="394" width="400" height="101" rx="16" fill="#252747" stroke="#7475cc"/>
+  <text x="545" y="430" fill="#babaff" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700">CODE ENFORCES THE POLICY</text>
+  <text x="545" y="460" fill="#d0d1e6" font-family="Inter,Segoe UI,sans-serif" font-size="14">Call, token and checkpoint budgets; Luna → Sol → Astra order.</text>
+  <rect x="962" y="394" width="446" height="101" rx="16" fill="#382839" stroke="#bd7a92"/>
+  <text x="990" y="430" fill="#f1aec2" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="700">HUMAN GATE · EXTERNAL ACTIONS</text>
+  <text x="990" y="460" fill="#e2cbd4" font-family="Inter,Segoe UI,sans-serif" font-size="14">A model recommendation is never a purchase, post or submission.</text>
+  <text x="56" y="533" fill="#7e93a9" font-family="Inter,Segoe UI,sans-serif" font-size="12">Agreement is not evidence. Preserve disagreement, provenance and uncertainty; verify consequential facts against sources.</text>
+</svg>
