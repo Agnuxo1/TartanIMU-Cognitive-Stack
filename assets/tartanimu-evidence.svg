@@ -31,6 +31,6 @@
   <rect x="734" y="366" width="684" height="128" rx="18" fill="#3a292b" stroke="#c58071"/>
   <text x="766" y="407" fill="#ffbc9f" font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700">THIS REPOSITORY · EVIDENCE STATUS</text>
   <text x="766" y="442" fill="#f5e5df" font-family="Inter,Segoe UI,sans-serif" font-size="15">Synthetic contract tests only. No trained model, prediction CSV, weights, or official score here.</text>
-  <text x="766" y="470" fill="#ddbeb4" font-family="Inter,Segoe UI,sans-serif" font-size="13">A timely private Kaggle entry remains unverified; no rank or result is claimed.</text>
+  <text x="766" y="470" fill="#ddbeb4" font-family="Inter,Segoe UI,sans-serif" font-size="13">No accepted contest entry or official result is included or claimed.</text>
   <text x="56" y="533" fill="#7896a7" font-family="Inter,Segoe UI,sans-serif" font-size="12">Contract checks are not a reproduction of the organizer's scoring service or a leaderboard evaluation.</text>
 </svg>

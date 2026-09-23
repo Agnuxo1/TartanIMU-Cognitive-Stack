@@ -68,7 +68,7 @@ El repositorio incluye **utilidades de contrato con datos sintéticos y sus prue
 
 ![Contrato de la tarea TartanIMU y evidencia necesaria para verificar una participación](assets/tartanimu-evidence.svg)
 
-A fecha de 23-09-2026 no se pudo inspeccionar desde este entorno el historial privado de entregas de Kaggle. Los archivos locales no permiten concluir si el titular entregó a tiempo. La [página oficial](https://superodometry.com/imuchallenge/) y la [competición en Kaggle](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026) especifican requisitos y plazos; consulta la [nota de evidencia fechada](docs/TARTANIMU-STATUS-2026-09-23.md). Las pruebas sintéticas y las métricas locales no son resultados oficiales.
+Este repositorio público no contiene recibo de Kaggle, identificador de una entrega aceptada, CSV de predicciones del concurso ni resultado del servicio oficial de puntuación. No afirma el estado de participación, puesto ni elegibilidad de nadie. Consulta la [nota de evidencia fechada](docs/TARTANIMU-STATUS-2026-09-23.md) y la [página del organizador](https://superodometry.com/imuchallenge/) para conocer los requisitos. Las pruebas sintéticas y las métricas locales no son resultados oficiales.
 
 ## Desarrollo
 

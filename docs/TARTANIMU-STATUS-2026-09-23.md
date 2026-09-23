@@ -13,9 +13,9 @@ competition data, a trained challenge model, trained weights, the 30,644-row
 prediction CSV, or an official score-service result. These helpers are not a
 reimplementation of the full official evaluator.
 
-The user's private Kaggle submission history could not be verified in this
-workspace. Missing local artifacts and an HTTP 403 response do not establish
-that no timely Kaggle upload exists. No submission ID, score, or rank is claimed.
+This public software release contains no Kaggle submission receipt, accepted
+entry ID, competition prediction CSV, or official score-service result. It
+makes no claim about any participant's submission status, rank, or eligibility.
 
 ## Official eligibility and deadlines
 
@@ -62,15 +62,13 @@ not claim complete rules compliance unless applicability is confirmed.
 
 ## Decision and remaining evidence request
 
-A real JEV 1.13.0 query classified eligibility as `not_verified_private_state`
-and recommended that the account owner inspect the private Kaggle submissions
-now (reported probability 0.82; confidence 0.76). JEV cannot see or prove the
-private account history. The remaining decisive evidence is the submission ID,
-timestamp, exact submitted CSV, scoring-service output, and runnable model
-artifacts. If those cannot be substantiated before the report deadline, do not
-file a report that implies contest eligibility or invents results. The public
-software repository is a separate deliverable and explicitly makes no contest
-performance claim.
+Eligibility cannot be established from this software repository alone. Before
+filing any organizer form or report, the team must verify an accepted prediction
+submitted by the deadline and match it to the exact CSV, official scoring
+output, reproducible model artifacts, public Hugging Face revision, and form or
+report receipts. If this evidence is unavailable, do not claim eligibility or
+invent results. The public software repository is a separate deliverable and
+makes no contest-performance claim.
 
 ## Official task contract
 

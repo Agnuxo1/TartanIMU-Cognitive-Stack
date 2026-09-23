@@ -68,7 +68,7 @@ This repository includes **synthetic-data contract utilities and tests** for IMU
 
 ![TartanIMU task contract and the evidence required for a verifiable entry](assets/tartanimu-evidence.svg)
 
-As of 2026-09-23, the private Kaggle account submission history could not be inspected from this environment. The local workspace cannot establish whether the account owner submitted on time. The organizer's [challenge page](https://superodometry.com/imuchallenge/) and [Kaggle competition](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026) specify the submission and reporting requirements; see the dated [evidence note](docs/TARTANIMU-STATUS-2026-09-23.md). Do not treat synthetic tests or a locally calculated metric as an official result.
+This public repository contains no Kaggle submission receipt, accepted entry ID, competition prediction CSV, or official score-service result. It makes no claim about any participant's submission status, rank, or eligibility. See the dated [evidence note](docs/TARTANIMU-STATUS-2026-09-23.md) and the organizer's [challenge page](https://superodometry.com/imuchallenge/) for the requirements. Do not treat synthetic tests or a locally calculated metric as an official result.
 
 ## Development
 
