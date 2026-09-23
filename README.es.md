@@ -33,7 +33,7 @@ El flujo empaquetado y probado está orientado a Windows. Clona el repositorio e
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m pytest --basetemp .pytest-local
 ```
 
 Ejecuta una tarea o consulta el conector común de JEV:
@@ -54,6 +54,20 @@ Las decisiones remotas de JEV necesitan una credencial de TypeSafe. En Windows, 
 
 El helper interactivo solo funciona en Windows. `connect` sin `--remote` realiza diagnósticos locales; `probe` y el enrutamiento remoto sí consultan al proveedor y pueden consumir cuota. Antes de configurar credenciales, lee [`docs/JEV-POLICY.md`](docs/JEV-POLICY.md) y [`docs/SECURITY.md`](docs/SECURITY.md).
 
+Si el Administrador de credenciales de Windows ya contiene una clave con un
+alias propio, selecciona ese perfil solo para la sesión actual de PowerShell,
+sin copiar ni volver a introducir el secreto:
+
+```powershell
+$env:TYPESAFE_PROFILE = "tu-perfil"
+run.bat connect --remote
+run.bat route "Elegir un enfoque acotado para esta tarea"
+```
+
+El perfil predeterminado es `profile-a`; el nombre seleccionado debe coincidir
+con el destino de la credencial en el Administrador de credenciales. El nombre
+del perfil no es una credencial.
+
 ## Cuándo consultar a JEV
 
 Conviene cuando una decisión semántica entre rutas disponibles, un cambio relevante de estado o un juicio compacto de finalización puede cambiar el siguiente paso. Es mejor usar código para transformaciones exactas, comprobaciones rutinarias, límites y control de acceso. Agrupa preguntas tipadas que comparten las mismas pruebas y evita sondear periódicamente un estado sin cambios.
@@ -73,9 +87,13 @@ Este repositorio público no contiene recibo de Kaggle, identificador de una ent
 ## Desarrollo
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q --basetemp .pytest-local
 .\.venv\Scripts\python.exe -m compileall -q jev_orchestrator competitions\tartanimu
 ```
+
+El directorio dedicado pytest-local mantiene los temporales de las pruebas
+en la unidad del repositorio, no en la carpeta temporal del sistema. Git lo
+ignora y queda reservado a pytest, que lo limpia al inicio de cada ejecución.
 
 Las pruebas cubren enrutamiento, escalado acotado, credenciales, minimización de telemetría y contratos sintéticos de TartanIMU. Los benchmarks que consultan JEV o un modelo usan red y cuota; no forman parte de las pruebas unitarias. Consulta [`CONTRIBUTING.md`](CONTRIBUTING.md).
 

@@ -33,7 +33,7 @@ The supported packaged workflow targets Windows. Clone to a drive with room (for
 py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-.\.venv\Scripts\python.exe -m pytest
+.\.venv\Scripts\python.exe -m pytest --basetemp .pytest-local
 ```
 
 Run a task or inspect the shared JEV connector:
@@ -54,6 +54,19 @@ Remote JEV decisions require a TypeSafe credential. On Windows, store it interac
 
 The interactive profile helper is Windows-specific. `connect` without `--remote` runs local diagnostics; `probe`/remote routing make provider requests and may use account quota. See [`docs/JEV-POLICY.md`](docs/JEV-POLICY.md) and [`docs/SECURITY.md`](docs/SECURITY.md) before configuring credentials.
 
+If Windows Credential Manager already contains a credential under a custom
+profile name, select that profile for the current PowerShell session without
+copying or re-entering the secret:
+
+```powershell
+$env:TYPESAFE_PROFILE = "your-profile"
+run.bat connect --remote
+run.bat route "Choose a bounded approach for this task"
+```
+
+The default profile is `profile-a`; the selected name must match the credential
+target in Credential Manager. The profile name is not a credential.
+
 ## JEV policy at a glance
 
 Use JEV when a semantic choice among a finite set of routes, a changed-state checkpoint, or a compact completion judgment can influence the next step. Prefer code for exact transformations, routine checks, budgets, and access control. Batch independent typed questions that use the same evidence; do not poll on an unchanged heartbeat.
@@ -73,9 +86,13 @@ This public repository contains no Kaggle submission receipt, accepted entry ID,
 ## Development
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pytest -q --basetemp .pytest-local
 .\.venv\Scripts\python.exe -m compileall -q jev_orchestrator competitions\tartanimu
 ```
+
+The dedicated pytest-local directory keeps test scratch on the checkout's
+drive instead of the system temporary directory. It is ignored by Git and
+reserved for pytest; pytest clears it at the start of each run.
 
 The test suite covers routing, bounded escalation, credential handling, telemetry minimization, and synthetic TartanIMU contracts. Benchmarks that call JEV or a model incur network/quota use and are separate from unit tests. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
 

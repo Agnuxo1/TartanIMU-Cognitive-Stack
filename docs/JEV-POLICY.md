@@ -66,6 +66,12 @@ the vault and is never written to a project file. Environment variables are
 supported for short-lived automation. Do not put a key in command-line
 arguments, source files, task prompts, telemetry, or public examples.
 
+If a key is already stored under a custom Credential Manager profile, select
+that target for the current PowerShell session with
+`$env:TYPESAFE_PROFILE = "your-profile"`. This lets `run.bat connect --remote`
+and the router use the existing profile without duplicating the credential.
+The default profile remains `profile-a` when no profile is selected.
+
 ## Caching and telemetry
 
 Decision caching is exact-state/policy keyed. Disable it when fresh evidence or
