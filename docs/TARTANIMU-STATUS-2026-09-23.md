@@ -49,6 +49,17 @@ recording the discrepancy; recheck it before filing. The September 20 prediction
 deadline is unchanged. No extension can create a new eligible prediction after
 that close.
 
+### Public code-sharing rule
+
+Section 6 of the live [Kaggle Rules](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules)
+defines “Competition Code” broadly and says that code shared publicly under that
+rule must also be shared on the competition's Kaggle discussion forum or
+notebook. This GitHub release contains only synthetic TartanIMU contract helpers
+and tests, not official competition data, prediction code, or a trained model.
+Whether these synthetic helpers count as “other code relevant to the
+Competition” is unresolved. No Kaggle forum post or notebook has been made; do
+not claim complete rules compliance unless applicability is confirmed.
+
 ## Decision and remaining evidence request
 
 A real JEV 1.13.0 query classified eligibility as `not_verified_private_state`
