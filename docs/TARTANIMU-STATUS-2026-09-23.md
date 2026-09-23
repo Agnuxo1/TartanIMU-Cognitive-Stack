@@ -19,19 +19,35 @@ that no timely Kaggle upload exists. No submission ID, score, or rank is claimed
 
 ## Official eligibility and deadlines
 
-The [organizer's challenge page](https://superodometry.com/imuchallenge/) and
+The organizer's [detailed setup and timeline](https://superodometry.com/imuchallenge/setup/),
+[challenge page](https://superodometry.com/imuchallenge/), and
 [Kaggle competition](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026)
 state that:
 
 - Prediction submissions closed **2026-09-20 at 23:55 UTC**.
+- The setup timeline and the organizer's August 1 announcement place both the
+  final Kaggle submission and model weights at **2026-09-20, 23:55 UTC**. Do not
+  assume the later report deadline extends the model-publication deadline.
 - The technical report is due **2026-09-23 at 23:59 US Eastern (EDT)**, which is
   **2026-09-24 at 03:59 UTC / 05:59 in Madrid**.
 - Final-ranking eligibility requires a timely Kaggle submission, a form entry
   attaching that exact CSV, a technical report, and public unified-model weights
-  plus inference code within the stated seven-day period. The organizers
-  re-execute eligible models; the public leaderboard is provisional.
+  plus inference code. The organizer page's phrase “within the same 7 days” does
+  not specify its anchor; its setup timeline and August 1 update give September
+  20 for the final submission and weights.
 - Report values in the specified tables must come from the organizer's scoring
   service, not a local implementation.
+
+### Conflicting organizer deadline text
+
+The organizer's [About page](https://superodometry.com/imuchallenge/about/)
+groups the technical report with the September 20 deadline. In contrast, the
+more detailed setup timeline and the dated September 4 announcement explicitly
+give the report a September 23, 23:59 EDT deadline; this note records that later,
+specific report deadline, not an extension of the prediction or model-weight
+deadlines. The eligibility paragraph's “within the same 7 days” wording for the
+public model repository remains ambiguous. Any claim that model weights were
+accepted after September 20 needs organizer confirmation and dated evidence.
 
 ## Decision and remaining evidence request
 
