@@ -19,35 +19,35 @@ that no timely Kaggle upload exists. No submission ID, score, or rank is claimed
 
 ## Official eligibility and deadlines
 
-The organizer's [detailed setup and timeline](https://superodometry.com/imuchallenge/setup/),
-[challenge page](https://superodometry.com/imuchallenge/), and
-[Kaggle competition](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026)
-state that:
+The organizer's [setup guide](https://superodometry.com/imuchallenge/setup/)
+says competition dates may change and directs participants to the live Kaggle
+pages as the source of truth. The signed-in, read-only [Kaggle Rules tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules)
+currently states:
 
 - Prediction submissions closed **2026-09-20 at 23:55 UTC**.
-- The setup timeline and the organizer's August 1 announcement place both the
-  final Kaggle submission and model weights at **2026-09-20, 23:55 UTC**. Do not
-  assume the later report deadline extends the model-publication deadline.
-- The technical report is due **2026-09-23 at 23:59 US Eastern (EDT)**, which is
-  **2026-09-24 at 03:59 UTC / 05:59 in Madrid**.
-- Final-ranking eligibility requires a timely Kaggle submission, a form entry
-  attaching that exact CSV, a technical report, and public unified-model weights
-  plus inference code. The organizer page's phrase “within the same 7 days” does
-  not specify its anchor; its setup timeline and August 1 update give September
-  20 for the final submission and weights.
+- The current Kaggle Rules timeline gives **2026-09-27 at 23:55 UTC** for both
+  the technical report and model weights (**2026-09-28 at 01:55 in Madrid**).
+- To qualify for the final ranking, a team also needs a form for each leaderboard
+  submission considered, attaching the exact prediction CSV; a PDF report; and a
+  public Hugging Face repository containing the frozen unified-model weights, a
+  runnable inference entry point, pinned `requirements.txt`, and that exact
+  `submission.csv`. Organizers re-execute the model. The Rules page allows one
+  72-hour repair window if the code fails, with a single GPU (at most 16 GB VRAM),
+  two hours wall-clock, and no internet access.
 - Report values in the specified tables must come from the organizer's scoring
   service, not a local implementation.
 
-### Conflicting organizer deadline text
+### Conflicting official deadline text
 
 The organizer's [About page](https://superodometry.com/imuchallenge/about/)
-groups the technical report with the September 20 deadline. In contrast, the
-more detailed setup timeline and the dated September 4 announcement explicitly
-give the report a September 23, 23:59 EDT deadline; this note records that later,
-specific report deadline, not an extension of the prediction or model-weight
-deadlines. The eligibility paragraph's “within the same 7 days” wording for the
-public model repository remains ambiguous. Any claim that model weights were
-accepted after September 20 needs organizer confirmation and dated evidence.
+still groups the report and weights with the September 20 deadline; its
+[setup timeline](https://superodometry.com/imuchallenge/setup/) gives the report
+as September 23 and weights as September 20. The live Kaggle Rules page now gives
+September 27 for both. Because the setup guide says to follow live Kaggle rules
+when dates change, this status note uses the current Rules-tab date while
+recording the discrepancy; recheck it before filing. The September 20 prediction
+deadline is unchanged. No extension can create a new eligible prediction after
+that close.
 
 ## Decision and remaining evidence request
 
